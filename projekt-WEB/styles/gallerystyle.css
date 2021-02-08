@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 16px;
+    background-color: white;
+}
+
+header{
+    margin: 10px;
+    padding: 5px;
+}
+
+header div h1{
+    height: auto;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Brush Script MT", cursive;
+    padding-top: 20px;
+}
+
+header div{
+    background-color: #f2dea7;
+    border-radius: 10px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+header nav{
+    margin-top: 10px;
+    padding: 5px;
+    height: 70px;
+    background-color: #f2d5a7;
+    border-radius: 10px;
+    display: flex;
+    flex: 100%;
+    
+}
+
+header nav ul{
+    height: 100%;
+    border-radius: 10px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.3em;
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    height: 100%;
+    width: 150px;
+    flex: 1;
+}
+
+header nav ul li:last-child{
+    margin-right: 0;
+}
+
+header nav ul li a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    line-height: 2.916em;
+    border-radius: 10px;
+    color: black;
+}
+
+header nav ul li a:hover{
+    background-color: #ad8e5f;
+    color: white;
+}
+
+main{
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+main article, aside{
+    background-color: #fff2d5a7;
+}
+
+main aside{
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+main aside h2{
+    width: 100%;
+    height: auto;
+}
+
+main aside img:not(.max){
+    padding-bottom: 60px;
+}
+
+main aside div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+}
+main aside a:hover{
+    opacity: 0.5;
+}
+main aside img{
+    max-width: 50%;
+}
+
+main article{
+    margin-top: 0;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    height: 100%;
+}
+  
+div.gallery:hover {
+    border: 1px solid #777;}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+  
+.responsive {
+    padding: 10px 10px;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      height: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+
+footer {
+    background-color:#f2dea7;
+    margin: 10px;
+    padding: 5px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul{
+    width: auto;
+    height: auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+footer ul li{
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+footer p{
+    height: 100%;
+    width: 100%;
+    line-height: 5.625em;
+    text-align: left;
+    flex:1;
+}
+.all{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+.Viki{
+    grid-row: 1;
+}
+
+.Sali{
+    grid-row: 2;
+}
+
+.Max{
+    grid-row: 3;
+}
+
+.Kira{
+    grid-row: 4;
+}
